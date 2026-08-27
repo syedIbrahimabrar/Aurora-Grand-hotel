@@ -1,0 +1,8 @@
+{
+  "name": "Aurora Grand Hotel",
+  "description": "World-class luxury 5-star hotel demo website in Kyiv, Ukraine featuring cinematic visuals, interactive room booking experience, suites gallery, dining, wellness, and editorial showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

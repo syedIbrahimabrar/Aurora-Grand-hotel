@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Lenis smooth scrolling integration */
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  body {
+    background-color: #faf8fc;
+    color: #3b354d;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: #c026d3;
+    color: #ffffff;
+  }
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cinzel-decorative {
+  font-family: 'Cinzel Decorative', 'Cinzel', serif;
+}
+
+.font-italiana {
+  font-family: 'Italiana', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-bodoni {
+  font-family: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Luxury Violet & Magenta Text Gradient */
+.text-violet-gradient {
+  background: linear-gradient(135deg, #6d28d9 0%, #a21caf 50%, #c026d3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-magenta-gradient {
+  background: linear-gradient(135deg, #7c3aed 0%, #d946ef 50%, #f43f5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-violet-light {
+  background: linear-gradient(135deg, #a78bfa 0%, #f472b6 60%, #e879f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Violet & Magenta Borders */
+.border-violet-subtle {
+  border-color: rgba(139, 92, 246, 0.22);
+}
+
+.border-magenta-glow {
+  border-color: rgba(217, 70, 239, 0.45);
+  box-shadow: 0 0 25px rgba(217, 70, 239, 0.12);
+}
+
+/* Light Glass Luxury Backdrop */
+.bg-glass-luxury {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.bg-glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* High-Performance Glide Animations for Dual Stream Gallery */
+@keyframes glideUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes glideDown {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animate-glide-up {
+  animation: glideUp 35s linear infinite alternate;
+  will-change: transform;
+}
+
+.animate-glide-down {
+  animation: glideDown 35s linear infinite alternate;
+  will-change: transform;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f0fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
